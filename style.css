@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion{
+    max-width: 80%;
+    margin-top: 50px;
+}
+
+.accordion .contentBox .label{
+    background-color: mediumslateblue;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    position:relative;
+    cursor: pointer;
+}
+
+.accordion .contentBox .label:before{
+    content:'+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    transition: .4s;
+}
+
+.accordion .contentBox .content{
+    background: rgba(136, 111, 247, 0.74);
+    padding: 0 20px;
+    color: white;
+    font-size: 17px;
+    margin: 5px 0;
+    transition: .3s;
+    max-height: 0;
+    overflow: hidden !important;
+    overflow-y: auto;
+}
+
+.accordion .contentBox.active .content{
+    max-height: 150px;
+    padding: 10px 20px;
+}
