@@ -35,7 +35,7 @@ body{
 }
 
 .accordion .contentBox.active .label:before{
-    content:'-';
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .accordion .contentBox .content{
