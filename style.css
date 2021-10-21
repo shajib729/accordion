@@ -34,9 +34,14 @@ body{
     transition: .4s;
 }
 
+.accordion .contentBox.active .label:before{
+    content:'-';
+}
+
 .accordion .contentBox .content{
     background: rgba(136, 111, 247, 0.74);
     padding: 0 20px;
+    transform-origin: top;
     color: white;
     font-size: 17px;
     margin: 5px 0;
